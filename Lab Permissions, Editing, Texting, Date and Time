@@ -100,7 +100,7 @@ No output
 
 What command did you use to do this?
 ----------
-
+nano copy_to_backup.sh
 
 
 ==========
@@ -118,13 +118,16 @@ The current directory means wherever you happen to be running the commands.
 
 Write out the code in your file below...
 ----------
-
-
+#!/bin/bash
+mkdir backup
+echo "I'm done backing up"
 
 ==========
 10. Create a directory in your HOME called test
 ----------
-
+cd
+ent-v314-010:~ student$ mkdir test
+mkdir: test: File exists
 
 
 ==========
@@ -132,16 +135,17 @@ Write out the code in your file below...
 
 What commands did you use to do this?
 ----------
-
-
+ent-v314-010:~ student$ cd test
+ent-v314-010:test student$ touch 1.txt
+ent-v314-010:test student$ touch 2.txt
 
 ==========
 12. Move the script that you created into this directory.
 
 What commands did you use to do this?
 ----------
-
-
+ent-v314-010:test student$ ls
+1.txt	2.txt	Backup	test
 
 ==========
 13. Run your script.
