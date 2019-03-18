@@ -18,31 +18,54 @@ First, let's figure out what day and time it is!
 
 What command did you use, and what was its output?
 ----------
-
-
+Date 
+Mon Mar 18 16:07:51 EDT 2019
 
 ==========
 2. Print out a calendar for this month.
 
 What command did you use, and what was its output?
 ----------
-
-
+cal
+     March 2019       
+Su Mo Tu We Th Fr Sa  
+                1  2  
+ 3  4  5  6  7  8  9  
+10 11 12 13 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28 29 30  
+31                   
 
 ==========
 3. a) Go to your home directory.  b) Verify that you're in your home directory.
 
 What commands did you use to do this?
 ----------
+ent-v314-010:~ student$ cd
+ent-v314-010:~ student$ 
 
-
+ent-v314-010:~ student$ pwd
+/Users/student
 
 ==========
 4. a) Create an empty file called copy_to_backup.sh.  b) Verify that the file exists.
 
 What commands did you use to do this?
 ----------
-
+ent-v314-010:~ student$ touch copy_to_backup.sh
+ent-v314-010:~ student$ 
+ls 
+AMALogger20190223.log	Movies			mtec1002
+AMALogger20190225.log	Music			mtec1002-lab-02
+AMALogger20190302.log	New Unity Project	mtec1002-lab-02.zip
+AMALogger20190306.log	New Unity Project (4)	mtec1003-lab-03.tar.gz
+AMALogger20190309.log	Pictures		myprojects~
+AMALogger20190311.log	Public			pymel.log
+AMALogger20190313.log	QLData			stuff
+Adlm			Things			test
+Adobe			__MACOSX		week4
+Applications		bar.txt			xgen
+Creative Cloud Files	copy_to_backup.sh
 
 
 ==========
@@ -50,16 +73,17 @@ What commands did you use to do this?
 
 What command did you use to find the permissions?
 ----------
-
-
+ent-v314-010:~ student$ ls -l copy_to_backup.sh
+-rw-r--r--  1 student  staff  0 Mar 18 16:14 copy_to_backup.sh
 
 ==========
 6. a) Change the permissions so that copy_to_backup.sh is executable by the user.  b) Verify the new permissions.
 
 What commands did you use to do this?  What was the output?
 ----------
-
-
+ent-v314-010:~ student$ chmod u+x copy_to_backup.sh
+ent-v314-010:~ student$ ls -l copy_to_backup.sh
+-rwxr-xr-x  1 student  staff  0 Mar 18 16:14 copy_to_backup.sh
 
 ==========
 7. Try executing (running) the file!
@@ -68,8 +92,8 @@ $ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
 ----------
-
-
+ent-v314-010:~ student$ ./copy_to_backup.sh
+No output
 
 ==========
 8. Open copy_to_backup.sh with nano
