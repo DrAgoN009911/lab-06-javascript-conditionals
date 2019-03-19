@@ -144,19 +144,25 @@ ent-v314-010:test student$ touch 2.txt
 
 What commands did you use to do this?
 ----------
+mv copy_to_backup.sh  test
+cd test
 ent-v314-010:test student$ ls
-1.txt	2.txt	Backup	test
+1.txt			copy_to_backup.sh
+2.txt
 
 ==========
 13. Run your script.
 
 What commands did you use to do this?
 ----------
-
-
-
+ chmod +x /kyleholston/test/copy_to_backup.sh
+./copy_to_backup.sh
 ==========
 14. Verify that a backup folder was created in your test directory... with copies of the files present.
 
 What commands did you use to do this?  Show the output.
 ----------
+cd test
+ls
+1.txt			copy_to_backup.sh
+2.txt
